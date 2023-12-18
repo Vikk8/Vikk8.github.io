@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/83be60ab27.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div class="loader-wrapper">
+  <div class="loader"></div>
+</div>
+<main>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/vikki logo.png" class="logo">
+            <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+<!-- Hero section -->
+<section id="hero" class="hero">
+
+    <div class="container">
+        <h1>I am Vikki Gupta, a software developer, fueled by a relentless pursuit of excellence and a passion for continuous learning.</h1>
+        <img 
+            class="hero-gradient"
+            src="/images/hero-gradient.png"
+        />
+    </div>
+
+
+   
+</section>
+
+<section id="projects" class="projects">
+    
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-wrapper">
+            <article class="project">
+                <h3>Desktop Assistant</h3>
+                <figure>
+                    <img src="/images/desktop-assistant.png" alt="">
+                </figure>
+                <p>
+                    Designed and implemented a virtual desktop assistant named Alex, capable of receiving voice commands and delivering voice output. Can perform various tasks showcasing a drive for creating user-friendly experiences. 
+                </p>
+            </article>
+    
+            <article class="project">
+                <h3>Port Scanner</h3>
+                <figure>
+                    <img src="/images/Port Scanner.jpg" alt="">
+                </figure>
+                <p>
+                    Developed a user-friendly code to efficiently scan and identify open ports in a network. 
+                </p>
+            </article>
+    
+            <article class="project">
+                <h3>Library Management System</h3>
+                <figure>
+                    <img src="/images/Library.jpg" alt="">
+                </figure>
+                <p>
+                    Developed a library management system using NetBeans and Java to efficiently organize and track library resource. Integrated with a MySQL database to streamline book cataloging, borrower management, and lending processes. 
+                </p>
+            </article>
+    
+            <article class="project">
+                <h3>Keylogger</h3>
+                <figure>
+                    <img src="/images/keylogger.png" alt="">
+                </figure>
+                <p>
+                    Designed and implemented a virtual desktop assistant named Alex, capable of receiving voice commands and delivering voice output. Can perform various tasks showcasing a drive for creating user-friendly experiences. 
+                </p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ---------------------------Skills----------------------------->
+<div id="skills">
+    <div class="container">
+        <h2 class="sub-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+               <i class="fa-brands fa-java"></i>
+                <p>Java</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-python"></i>
+                <p>Python</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML5</p>
+            </div>
+            <div class="skill">
+               <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS3</p>
+            </div>
+            <div class="skill">
+               <i class="fa-brands fa-square-js"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <img src="images/owasp.png" alt="OWASP Icon"> 
+                <p>OWASP Top 10</p>
+            </div>
+            <div class="skill">
+                <i class="fa-solid fa-database"></i>
+                <p>SQL</p>
+            </div>
+            
+            <div class="skill">
+                <img src="images/mysql-icon.png.png" alt="MySQL Icon"> 
+                <p>MySQL</p>
+            </div>
+            <div class="skill">
+                <i class="fa-brands fa-linux"></i>
+                <p>Linux</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- ---------------Contact------------------>
+<div id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <div class="social-wrapper">
+                
+            <a class="social"href="mailto:vikkigupta081@gmail.com">
+                <img src="/images/email.svg" class="social-icon" alt="email">
+                <span>vikkigupta081@gmail.com</span>
+            </a>
+                
+            <a class="social" href="tel:8145425340">
+                <img src="/images/phone.svg" class="social-icon" alt="phone">
+                <span>8145425340</span>
+            </a>
+        </div>
+
+        <div class="contact-inputs">
+            <form name="submit-to-google-sheet">
+                <div>
+                    <h4>NAME</h4>
+                    <input type="text" name="Name" required>
+                </div>
+
+                <div>
+                    <h4>EMAIL</h4>
+                    <input type="email" name="Email" required>
+                </div>
+                <div>
+                    <h4>YOUR MESSAGE</h4>
+                    <textarea re name="Message" rows="6" ></textarea>
+                </div>
+                <div>
+                  <button type="submit" class="btn btn2">Submit</button>
+
+                </div>
+            </form>
+            <span id="msg"></span>
+        </div>
+        
+        
+
+    </div>
+   
+</div>
+</main>
+
+<script src="/script.js"></script>
+</body>
+</html>
